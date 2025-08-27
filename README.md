@@ -81,11 +81,23 @@
     <p style="color:#ffffff; font-family:sans-serif; margin-bottom:8px;">
       🔗 <strong>Pairing Server 01</strong>
     </p>
-    <a href="https://ouzu-md-pair.onrender.com/" target="_blank">
-      <img src="https://img.shields.io/badge/PAIR_CODE_1-DA70D6?style=for-the-badge&logo=matrix&logoColor=white&labelColor=0d0d0d"/>
-    </a>
+    <!-- Canvas pour le QR code -->
+    <canvas id="qrCanvas1"></canvas>
   </div>
 </div>
+
+<!-- Librairie QR code -->
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script>
+  const qrCanvas = document.getElementById('qrCanvas1');
+  // Lien public que tout le monde peut scanner
+  const sessionCode = "https://ouzu-md-pair.onrender.com/"; 
+
+  QRCode.toCanvas(qrCanvas, sessionCode, { width: 200 }, function (error) {
+    if (error) console.error(error);
+    console.log('QR Code généré !');
+  });
+</script>
 
 ---
 
