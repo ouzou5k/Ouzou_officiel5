@@ -1,6 +1,6 @@
-name: khan-md
+name: ouzou-md
 services:
-  - name: khan-md-service
+  - name: ouzou-md-service
     type: web
     ports:
       - 5000
