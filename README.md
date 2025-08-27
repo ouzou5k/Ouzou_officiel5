@@ -77,12 +77,15 @@
 > Securely link your device using the official Ouzou-MD pairing portals. VPN may be required in case of connection issues.
 
 <div align="center" style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; padding:20px;">
+<div align="center" style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; padding:20px;">
   <div style="background:#0f0f0f; border:2px solid #8A2BE2; border-radius:10px; padding:15px 25px; box-shadow:0 0 12px #8A2BE2; min-width:250px; text-align:center;">
     <p style="color:#ffffff; font-family:sans-serif; margin-bottom:8px;">
       🔗 <strong>Pairing Server 01</strong>
     </p>
-    <!-- Canvas pour le QR code -->
-    <canvas id="qrCanvas1"></canvas>
+    <!-- Image QR Code -->
+    <a href="https://ouzu-md-pair.onrender.com/" target="_blank">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://ouzu-md-pair.onrender.com/" alt="QR Code">
+    </a>
   </div>
 </div>
 
