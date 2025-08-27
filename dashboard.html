@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ouzou_officiel-MD Dashboard</title>
+  <style>
+    body {
+      background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      min-height: 100vh;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+      animation: neonGlow 1.5s ease-in-out infinite alternate;
+      margin-bottom: 30px;
+    }
+    @keyframes neonGlow {
+      0% { text-shadow: 0 0 5px #00ffff, 0 0 10px #ff00ff; }
+      100% { text-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff; }
+    }
+    .cards-container {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+    }
+    .server-card {
+      background:#0f0f0f;
+      border:2px solid #8A2BE2;
+      border-radius:10px;
+      padding:15px 25px;
+      box-shadow:0 0 12px #8A2BE2;
+      text-align:center;
+      width:250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .server-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00ffff, 0 0 50px #ff00ff;
+    }
+    .server-card img {
+      margin-top:10px;
+      width:200px;
+      height:200px;
+    }
+    .button {
+      display:inline-block;
+      margin-top:15px;
+      padding:12px 25px;
+      background: linear-gradient(45deg, #ff00ff, #00ffff);
+      color:#fff;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:bold;
+      box-shadow:0 0 15px #ff00ff;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow:0 0 10px #ff00ff; }
+      50% { box-shadow:0 0 30px #00ffff; }
+      100% { box-shadow:0 0 10px #ff00ff; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ouzou_officiel-MD Dashboard</h1>
+
+  <div class="cards-container">
+    <!-- Serveur 01 -->
+    <div class="server-card">
+      <p>🔗 <strong>Pairing Server 01</strong></p>
+      <a href="https://ouzu-md-pair.onrender.com/" target="_blank">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://ouzu-md-pair.onrender.com/" alt="QR Code Server 01">
+      </a>
+      <a href="https://ouzu-md-pair.onrender.com/" target="_blank" class="button">Ouvrir le serveur</a>
+    </div>
+
+    <!-- Serveur 02 (exemple lien différent) -->
+    <div class="server-card">
+      <p>🔗 <strong>Pairing Server 02</strong></p>
+      <a href="https://ouzu-md-pair.onrender.com/" target="_blank">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://ouzu-md-pair.onrender.com/" alt="QR Code Server 02">
+      </a>
+      <a href="https://ouzu-md-pair.onrender.com/" target="_blank" class="button">Ouvrir le serveur</a>
+    </div>
+
+    <!-- Serveur 03 (exemple lien différent) -->
+    <div class="server-card">
+      <p>🔗 <strong>Pairing Server 03</strong></p>
+      <a href="https://ouzu-md-pair.onrender.com/" target="_blank">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://ouzu-md-pair.onrender.com/" alt="QR Code Server 03">
+      </a>
+      <a href="https://ouzu-md-pair.onrender.com/" target="_blank" class="button">Ouvrir le serveur</a>
+    </div>
+  </div>
+
+</body>
+</html>
