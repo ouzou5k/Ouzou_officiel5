@@ -74,33 +74,19 @@
 
 ## 🚀 Pairing Dashboard
 
-> Securely link your device using the official Ouzou-MD pairing portals. VPN may be required in case of connection issues.
+> Securely link your device using the official Ouzou_officiel-MD pairing portals below: if connection issues may require vpn activation to fix this issue.
 
 <div align="center" style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; padding:20px;">
-<div align="center" style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; padding:20px;">
-  <div style="background:#0f0f0f; border:2px solid #8A2BE2; border-radius:10px; padding:15px 25px; box-shadow:0 0 12px #8A2BE2; min-width:250px; text-align:center;">
+
+  <!-- Link 1 -->
+  <div style="background:#0f0f0f; border:2px solid #00FFFF; border-radius:10px; padding:15px 25px; box-shadow:0 0 12px #00ffff; min-width:250px; text-align:center;">
     <p style="color:#ffffff; font-family:sans-serif; margin-bottom:8px;">
       🔗 <strong>Pairing Server 01</strong>
     </p>
-    <!-- Image QR Code -->
-    <a href="https://ouzu-md-pair.onrender.com/" target="_blank">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://ouzu-md-pair.onrender.com/" alt="QR Code">
+    <a href="https://khanmd-pair.onrender.com/" target="_blank">
+      <img src="https://img.shields.io/badge/PAIR_CODE_1-F0AF35?style=for-the-badge&logo=matrix&logoColor=white&labelColor=0d0d0d"/>
     </a>
   </div>
-</div>
-
-<!-- Librairie QR code -->
-<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
-<script>
-  const qrCanvas = document.getElementById('qrCanvas1');
-  // Lien public que tout le monde peut scanner
-  const sessionCode = "https://ouzu-md-pair.onrender.com/"; 
-
-  QRCode.toCanvas(qrCanvas, sessionCode, { width: 200 }, function (error) {
-    if (error) console.error(error);
-    console.log('QR Code généré !');
-  });
-</script>
 
 ---
 
